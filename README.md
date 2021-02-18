@@ -21,11 +21,5 @@ __目指した課題解決__
 ## userテーブル
 |   Column   |  Type  | Options   |
 | ---------- | ------ | --------- |
-| nickname | string | null: false |
 | email | string | null: false |
 | encrypted_password | string | null: false |
-| full_surname | string | null: false |
-| full_name | string | null: false |
-| half_surname | string | null: false |
-| half_name | string | null: false |
-| birthday | date | null: false |
