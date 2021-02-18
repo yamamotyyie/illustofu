@@ -17,3 +17,15 @@ __目指した課題解決__
 | 1 | ユーザー管理機能 |ログインしているユーザーがイラストを投稿できる|deviseを導入|パスワードと名前は必須|5時間|
 | 2 | イラスト投稿機能 |イラストを投稿、編集、削除できる。イラストをクリックすると詳細画面へいける|イラストの投稿、編集、削除ができる|イラストは必須。投稿した人の名前と作品名を表示|5時間|
 | 3 | 感想（コメント）機能 |イラストに対してコメントできる|イラストの詳細画面からコメントを送ることができる|コメントを送るのに失敗したら、その画面に留まる|5時間|
+# テーブル設計
+## userテーブル
+|   Column   |  Type  | Options   |
+| ---------- | ------ | --------- |
+| nickname | string | null: false |
+| email | string | null: false |
+| encrypted_password | string | null: false |
+| full_surname | string | null: false |
+| full_name | string | null: false |
+| half_surname | string | null: false |
+| half_name | string | null: false |
+| birthday | date | null: false |
