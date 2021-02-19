@@ -40,7 +40,7 @@ __目指した課題解決__
 - belongs_to :user
 - has_many :comments
 
-## commentテーブル
+## commentsテーブル
 |  Column  | Type  | Options |
 | ---------| ----- | ------- |
 | comment | text| null:false |
