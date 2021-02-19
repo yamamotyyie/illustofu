@@ -21,5 +21,6 @@ __目指した課題解決__
 ## userテーブル
 |   Column   |  Type  | Options   |
 | ---------- | ------ | --------- |
+| nickname | string | null: false |
 | email | string | null: false |
 | encrypted_password | string | null: false |
