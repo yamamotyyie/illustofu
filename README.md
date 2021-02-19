@@ -46,3 +46,7 @@ __目指した課題解決__
 | comment | text| null:false |
 | user | reference | null: false foreign_key: true |
 | illust | reference | null: false foreign_key: true |
+
+### アソシエーション
+- belongs_to :user
+- belongs_to :illust
