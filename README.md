@@ -31,3 +31,5 @@ __目指した課題解決__
 | text | string | null:false|
 | user | reference | null:false foreign_key: true|
 ## commentテーブル
+|  Column  | Type  | Options |
+| ---------| ----- | ------- |
