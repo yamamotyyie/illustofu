@@ -24,9 +24,10 @@ __目指した課題解決__
 | nickname | string | null: false |
 | email | string | null: false |
 | encrypted_password | string | null: false |
-### アソシエーション
+## illustテーブル
 |   Column   |  Type  | Options   |
 | -----------| -------| ----------|
 | title | string | null:false|
 | text | string | null:false|
 | user | reference | null:false foreign_key: true|
+## commentテーブル
