@@ -28,8 +28,11 @@ __目指した課題解決__
 |   Column   |  Type  | Options   |
 | -----------| -------| ----------|
 | title | string | null:false|
-| text | string | null:false|
+| text | text | null:false|
 | user | reference | null:false foreign_key: true|
 ## commentテーブル
 |  Column  | Type  | Options |
 | ---------| ----- | ------- |
+| comment | text| null:false |
+| user | reference | null: false foreign_key: true |
+| illust | reference | null: false foreign_key: true |
