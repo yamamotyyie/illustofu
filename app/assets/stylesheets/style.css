@@ -39,9 +39,11 @@ img {
 
 .header {
   background-color: gray;
+  height: 60px;
+  display: flex;
+  padding: 10px 20px;
 }
 .nav{
   background-color: red;
-  width: 885px;
-  height: 40px;
+  width: 400px;
 }
