@@ -39,11 +39,14 @@ img {
 
 .header {
   background-color: gray;
-  height: 60px;
+  height: 100px;
   display: flex;
-  padding: 10px 20px;
+  padding: 0px 10px;
 }
 .nav{
-  background-color: red;
-  width: 400px;
+  background-color: darkgray;
+  width: 100vw;
+}
+.logo{
+  width: 100px;
 }
