@@ -39,6 +39,9 @@ img {
 
 .header {
   background-color: gray;
-  margin-bottom: 48px;
-  padding: 20px 0px;
+}
+.nav{
+  background-color: red;
+  width: 885px;
+  height: 40px;
 }
