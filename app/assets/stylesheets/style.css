@@ -38,15 +38,28 @@ img {
 /* ヘッダー */
 
 .header {
-  background-color: gray;
+  background-color: black;
   height: 100px;
   display: flex;
   padding: 0px 10px;
 }
 .nav{
-  background-color: darkgray;
   width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+.nav_left{
+  background-color:black;
+  width: 100px
 }
 .logo{
   width: 100px;
+}
+.nav_right{
+  background-color: blue;
+  width: 500px;
+}
+.post{
+  color: white;
+  font-size: 25px;
 }
