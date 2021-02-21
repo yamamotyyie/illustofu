@@ -56,10 +56,19 @@ img {
   width: 100px;
 }
 .nav_right{
-  background-color: blue;
   width: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .post{
   color: white;
   font-size: 25px;
+  text-decoration: none;
+  border: white 10px groove;
+}
+.logout{
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
 }
