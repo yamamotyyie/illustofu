@@ -65,10 +65,11 @@ img {
   color: white;
   font-size: 25px;
   text-decoration: none;
-  border: white 10px groove;
+  border: white 4px outset;
 }
 .logout{
   color: white;
   font-size: 25px;
   text-decoration: none;
+  border: white 4px outset;
 }
