@@ -78,7 +78,6 @@ img {
 }
 .main .contents{
   background-color:#d0af4c;
-  width:100vw;
   height: 100vh;
 }
 .contents{
@@ -104,7 +103,6 @@ img {
   color: black;
 }
 .illusts{
-  background-color: black;
-  height: 20vh;
-  width: 100vw;
+  background-color: #F0E68C;
+  height: 100%;
 }
