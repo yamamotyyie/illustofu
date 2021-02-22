@@ -73,3 +73,12 @@ img {
   text-decoration: none;
   border: white 4px outset;
 }
+.main .contents{
+  background-color: gray;
+  width:100vw;
+  height: 100vh;
+}
+.contents{
+  display: block;
+  justify-content: center;
+}
