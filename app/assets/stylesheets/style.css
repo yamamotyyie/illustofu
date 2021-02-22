@@ -74,11 +74,15 @@ img {
   border: white 4px outset;
 }
 .main .contents{
-  background-color: gray;
+  background-color:#333333;
   width:100vw;
   height: 100vh;
 }
 .contents{
-  display: block;
+  display: flex;
   justify-content: center;
+  padding: 30px 0;
+}
+.subtitle{
+  color: white;
 }
