@@ -83,8 +83,8 @@ img {
 }
 .contents{
   display: flex;
-  justify-content: center;
   padding: 20px 0;
+  flex-direction: column;
 }
 .introduce{
   background-color:white;
@@ -102,4 +102,9 @@ img {
 }
 .intro_text{
   color: black;
+}
+.illusts{
+  background-color: black;
+  height: 20vh;
+  width: 100vw;
 }
