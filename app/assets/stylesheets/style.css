@@ -61,6 +61,7 @@ img {
   justify-content: space-around;
   align-items: center;
 }
+
 .post{
   color: white;
   font-size: 25px;
@@ -87,11 +88,6 @@ img {
   background-color: red;
   width: 100vw;
   height: 20vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
 }
 .intro{
   color: white;
@@ -99,5 +95,4 @@ img {
 }
 .intro_text{
   color: white;
-  display: block;
 }
