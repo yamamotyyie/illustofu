@@ -82,7 +82,6 @@ img {
 }
 .contents{
   display: flex;
-  padding: 20px 0;
   flex-direction: column;
 }
 .introduce{
@@ -92,7 +91,7 @@ img {
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 30vh;
+  height: 24vh;
   box-shadow: 0px 0px 5px 5px #bbb inset;
 }
 .intro{
@@ -102,12 +101,23 @@ img {
 .intro_text{
   color: black;
 }
-.illusts{
+.illust-contents{
   background-color: #F0E68C;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.illusts{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.subtitle{
+  color: black;
+  font-size: 40px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 .card{
   background-color: #006e54;
@@ -125,4 +135,8 @@ img {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 5px 5px #bbb inset;
+}
+.footer{
+  background-color: green;
+  height: 100px;
 }
