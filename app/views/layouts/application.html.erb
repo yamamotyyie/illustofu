@@ -16,8 +16,13 @@
           <%= link_to image_tag('いらすとーふ.png',class: :logo),root_path%>
         </div>
         <ul class='nav_right'>
+        <% if user_signed_in?%>
           <li> <%= link_to 'ログアウト','#',class:'logout'%> </li>
           <li> <%= link_to '投稿する','#',class:'post'%> </li>
+        <% else%>
+          <li> <%= link_to '新規登録','#',class:'sign-up'%> </li>
+          <li> <%= link_to 'ログイン','#',class:'login'%> </li>
+        <% end%>
         </div>
       </div>
     </header>
