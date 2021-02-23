@@ -1,0 +1,21 @@
+.contents-row{
+  background-color:#F0E68C;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.base{
+  background-color: #006e54;
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registration-main{
+  background-color: white;
+  width: 85vw;
+  height: 85vh;
+  box-shadow: 0px 0px 9px 9px #bbb inset;
+}

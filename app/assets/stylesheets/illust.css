@@ -72,16 +72,10 @@ img {
   background-color: white;
   box-shadow: 0px 0px 4px 4px #bbb inset;
 }
-/* .logout{
-  color: black;
-  font-size: 30px;
-  text-decoration: none;
-  background-color: white;
-  box-shadow: 0px 0px 4px 4px #bbb inset;
-} */
 
 /* トップページ */
-.main .contents{
+.main ,
+.contents{
   background-color:#F0E68C;
   height: 100vh;
 }
@@ -142,6 +136,6 @@ img {
   box-shadow: 0px 0px 5px 5px #bbb inset;
 }
 .footer{
-  background-color: green;
+  background-color:#006e54;
   height: 100px;
 }
