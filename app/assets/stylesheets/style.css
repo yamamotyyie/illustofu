@@ -38,7 +38,7 @@ img {
 /* ヘッダー */
 
 .header {
-  background-color:#e6b422;
+  background-color:#006e54;
   height: 100px;
   display: flex;
   padding: 0px 10px;
@@ -108,4 +108,21 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.card{
+  background-color: #006e54;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list{
+  background-color: white;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px 5px #bbb inset;
 }
