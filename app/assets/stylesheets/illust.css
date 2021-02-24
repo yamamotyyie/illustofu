@@ -139,7 +139,11 @@ img {
   box-shadow: 0px 0px 5px 5px #bbb inset;
 }
 /* イラスト投稿画面 */
-
+.illusts-contents{
+  width: 100vw;
+  height: 100vh;
+  background-color:white;
+}
 /* フッター */
 .footer{
   background-color:#006e54;
