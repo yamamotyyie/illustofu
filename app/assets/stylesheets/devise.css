@@ -14,7 +14,8 @@
   align-items: center;
   margin-top: 20px;
 }
-.registration-main{
+.registration-main,
+.login-main{
   background-color: white;
   width: 40vw;
   height: 90vh;
@@ -63,11 +64,18 @@
 .register-btn{
   margin-top: 20px;
 }
-.register-touhu-btn{
+.register-touhu-btn,
+.login-touhu-btn{
   width: 100px;
   height: 50px;
   background-color: white;
   box-shadow: 0px 0px 3px 3px #bbb inset;
   outline: none;
   border: none;
+}
+.login-main{
+  height: 50vh;
+}
+.login-btn{
+  margin-top: 15px;
 }
