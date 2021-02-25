@@ -187,6 +187,11 @@ img {
   border: none;
   box-shadow: 0px 0px 3px 3px rgb(230, 230, 230) inset;
 }
+.illust-btn-contents{
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+}
 .post-btn{
   width: 100px;
   height: 50px;
@@ -194,4 +199,7 @@ img {
   box-shadow: 0px 0px 3px 3px #bbb inset;
   outline: none;
   border: none;
+}
+.back-btn{
+  font-size: 16px;
 }
