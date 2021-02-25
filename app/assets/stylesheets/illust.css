@@ -166,4 +166,9 @@ img {
   justify-content: space-between;
   width: 50vw;
 }
+.new-illust{
+  width: 50vw;
+  height: 40vh;
+  padding: 5vh;
+}
 
