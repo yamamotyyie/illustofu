@@ -149,13 +149,12 @@ img {
 }
 .illust-post-main{
   height: 100vh;
-  width: 70vw;
+  width: 60vw;
   background-color: white;
   box-shadow: 0px 0px 10px 10px #bbb inset;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
 }
 .illust-post-title{
   font-size: 40px;
@@ -168,7 +167,7 @@ img {
   padding-top: 2vh;
   justify-content: space-between;
   width: 50vw;
-  height: 20vh;
+  height: 15vh;
 }
 .new-illust{
   width: 50vw;
@@ -188,9 +187,13 @@ img {
   box-shadow: 0px 0px 3px 3px rgb(230, 230, 230) inset;
 }
 .illust-btn-contents{
+  display: flex;
+  justify-content: center;
   flex-direction: column;
-  align-items: center;
-  height: 100px;
+  height: 300px;
+  margin-top:  10px;
+  padding: 10px;
+  text-align: center;
 }
 .post-btn{
   width: 100px;
@@ -201,5 +204,16 @@ img {
   border: none;
 }
 .back-btn{
-  font-size: 16px;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: white;
+  box-shadow: 0px 0px 3px 3px#6c4008 inset;
+  color: black;
+  width: 100px;
+  height: 50px;
+  margin-top: 20px;
+  padding-top: 10px;
 }
+.footer{
+  height: 100px;
+  background-color:#006e54;}
