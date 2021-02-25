@@ -1,5 +1,15 @@
-<div class="illust-content">
-    <%= form_with model:@illust,class:'illust-post-main',local: true do|f|%>
-      <h2 class='illust-post-title'>イラストの情報を入力</h2>
-    <% end%>
+<div class='illust-content'>
+  <%= form_with model:@illust,class:'illust-post-main',local: true do|f|%>
+    <h2 class='illust-post-title'>イラストの情報を入力</h2>
+    <div class='img-upload'>
+      <div class='form-text'>
+        イラスト画像
+        <span class='indispensable'>必須</span>
+      </div>
+      <div class='click-upload'>
+        <p>クリックでイラストをアップロード</p>
+        <%=f.file_field :image%>
+      </div>
+    </div>
+  <% end%>
 </div>

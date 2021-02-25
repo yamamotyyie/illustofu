@@ -160,4 +160,10 @@ img {
 .illust-post-title{
   font-size: 40px;
 }
+.img-upload{
+  display: flex;
+  padding: 5vh;
+  justify-content: space-between;
+  width: 50vw;
+}
 
