@@ -17,6 +17,14 @@
         <span class='indispensable'>必須</span>
       </div>
       <%= f.text_area :title,class:'illust-text',placeholder:"タイトルを入力"%>
+      <div class='form-text'>
+        イラスト説明
+        <span class='indispensable'>必須</span>
+      </div>
+      <%= f.text_area :text,class:'illust-text',placeholder:"説明文を入力(あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ)"%>
+    </div>
+    <div class='illust-btn-contents'>
+    <%= f.submit "投稿する",class:'post-btn'%>
     </div>
   <% end%>
 </div>
