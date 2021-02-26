@@ -1,5 +1,6 @@
 class IllustsController < ApplicationController
   def index
+    @illusts=Illust.all
   end
 
   def new

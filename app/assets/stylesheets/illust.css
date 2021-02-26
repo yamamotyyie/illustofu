@@ -80,11 +80,12 @@ img {
 .main ,
 .contents{
   background-color:#F0E68C;
-  height: 100vh;
+  height: 100%;
 }
 .contents{
   display: flex;
   flex-direction: column;
+  height:  100vh;
 }
 .introduce{
   background-color:white;
@@ -112,7 +113,7 @@ img {
 }
 .illusts{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .subtitle{
@@ -128,15 +129,20 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 10px;
 }
 .list{
   background-color: white;
-  width: 220px;
-  height: 220px;
+  width: 230px;
+  height: 230px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 5px 5px #bbb inset;
+}
+.illust-img{
+  width: 90%;
+  height: 90%;
 }
 /* イラスト投稿画面 */
 .illust-content{

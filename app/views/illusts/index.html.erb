@@ -12,15 +12,32 @@
 
   <%# イラスト一覧 %>
     <div class='illust-contents'>
-    <h2 class='subtitle'>新規投稿いらすと</h2>
+      <h2 class='subtitle'>新規投稿いらすと</h2>
       <ul class='illusts'>
-        <div class='card'>
+      <% @illusts.each do |illust|%>
+      <div class=card>
           <li class='list'>
-          <%= link_to '#' do%>
-          <%= image_tag '/assets/dammy.png',class: 'illust-img'%>
-          <% end%>
+            <%= link_to '#' do%>
+              <%=image_tag illust.image,class:'illust-img'%>
+              <% end%>
           </li>
+          <div class='illust-info'>
+            <h3 class='illust-title'>
+              <%= illust%>
+            </h3>
+          </div>
         </div>
+        <% end%>
+
+        <% if @illusts.length ==0%>
+        <div class='card'>
+            <li class='list'>
+            <%= link_to '#' do%>
+            <%= image_tag '/assets/dammy.png',class: 'illust-img'%>
+            <% end%>
+            </li>
+        </div>
+        <% end%> 
       </ul>
     </div>
     <%# イラスト一覧 %>
