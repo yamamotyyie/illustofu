@@ -263,6 +263,7 @@ img {
   align-items: center;
   width: 60vw;
   height:  100vh;
+  padding: 20px;
 }
 .illust-manage{
   margin-top: 10px;
@@ -273,6 +274,9 @@ img {
 }
 .illust-btn{
   margin-top:60px;
+}
+.illust-show-text{
+  margin-bottom: 40px;
 }
 /* エラーメッセージ */
 .error-alert {
