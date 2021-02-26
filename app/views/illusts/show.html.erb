@@ -1,9 +1,10 @@
 <div class='illust-show-content'>
   <div class='illust-show-main'>
-    <div class='illust-wrapper'>
       <p class=illust-show-text>
         <%= @illust.title%>
       </p>
-    </div>
+      <div class='show-image'>
+        <%= image_tag @illust.image,width:'60%',height:'80%'%>
+      </div>
   </div>
 </div>
