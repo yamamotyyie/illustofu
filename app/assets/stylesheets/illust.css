@@ -155,6 +155,9 @@ img {
 .illust-title{
   color: white;
 }
+.illust-user{
+  color: rgb(255, 215, 83);
+}
 .illust-img{
   width: 90%;
   height: 90%;
