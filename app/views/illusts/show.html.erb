@@ -5,7 +5,7 @@
       </p>
       <div class='illust-manage'>
         <%= link_to '編集する','#',class:'illust-btn'%> 
-        <%= link_to '削除する','#',class:'illust-btn'%> 
+        <%= link_to '削除する',illust_path(@illust.id),class:'illust-btn',method: :delete%> 
       </div>
       <div class='show-image'>
         <%= image_tag @illust.image,width:'60%',height:'80%'%>

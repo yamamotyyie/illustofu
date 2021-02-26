@@ -20,6 +20,12 @@ class IllustsController < ApplicationController
     @illust = Illust.find(params[:id])
   end
 
+  def destroy
+    illust=Illust.find(params[:id])
+    illust.destroy
+    redirect_to root_path
+  end
+
   private
   def illust_params
     params.require(:illust).permit(:title,:text,:image).merge(user_id: current_user.id)
