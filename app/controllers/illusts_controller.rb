@@ -6,6 +6,7 @@ class IllustsController < ApplicationController
   def new
     @illust = Illust.new
   end
+
   def create
     @illust = Illust.new(illust_params)
     if @illust.save
@@ -13,6 +14,10 @@ class IllustsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def show
+    @illust = Illust.find(params[:id])
   end
 
   private
