@@ -3,8 +3,13 @@
       <p class=illust-show-text>
         <%= @illust.title%>
       </p>
+      <div class='illust-manage'>
+        <%= link_to '編集する','#',class:'illust-btn'%> 
+        <%= link_to '削除する','#',class:'illust-btn'%> 
+      </div>
       <div class='show-image'>
         <%= image_tag @illust.image,width:'60%',height:'80%'%>
       </div>
+      <div class='illust-text'>
   </div>
 </div>

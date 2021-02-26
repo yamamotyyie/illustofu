@@ -253,7 +253,7 @@ img {
   flex-direction: column;
   display: flex;
   align-items: center;
-  padding-top: 20px;
+  padding: 30px;
 }
 .illust-show-text{
   font-size: 20px;
@@ -261,6 +261,19 @@ img {
 .show-image{
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 60vw;
+  height:  100vh;
+}
+.illust-manage{
+  margin-top: 10px;
+  width: 300px;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+.illust-btn{
+  margin-top:60px;
 }
 /* エラーメッセージ */
 .error-alert {
