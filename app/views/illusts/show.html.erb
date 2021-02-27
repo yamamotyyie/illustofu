@@ -20,7 +20,7 @@
           <%= form_with model: [@illust,@comment],class:'comment-form',local: true do |f|%>
             <div class='comment-field'>
               <h3 class='comment-title'>コメント<h3>
-              <%= f.text_field :massage,class:'comment'%>
+              <%= f.text_field :messeage,class:'comment'%>
             </div>
             <div class='actions'>
               <%= f.submit "送信する"%>
@@ -31,7 +31,7 @@
       <ul class='comments_lists'>
         <% @comments.each do |comment|%>
           <li class='comment_list'>
-          <%= comment.message%>
+          <%= comment.messeage%>
           <%= comment.user.nickname%>
           </li>
         <% end%>

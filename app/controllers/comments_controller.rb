@@ -2,7 +2,11 @@ class CommentsController < ApplicationController
   def create
     @comment = Comment.new(comment_params)
     if @comment.save
-      redirect_to illust_path
+      redirect_to illust_path(@comment.illust)
+    else
+      @illust = @comment.illust
+      @comments = @illust.comments
+      render "illusts/show"
     end
   end
 
