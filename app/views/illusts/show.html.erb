@@ -3,10 +3,12 @@
       <p class=illust-show-text>
         <%= @illust.title%>
       </p>
-      <div class='illust-manage'>
-        <%= link_to '編集する','#',class:'illust-btn'%> 
-        <%= link_to '削除する',illust_path(@illust.id),class:'illust-btn',method: :delete%> 
-      </div>
+      <% if user_signed_in? && current_user.id == @illust.user_id%>
+        <div class='illust-manage'>
+          <%= link_to '編集する','#',class:'illust-btn'%> 
+          <%= link_to '削除する',illust_path(@illust.id),class:'illust-btn',method: :delete%> 
+        </div>
+      <% end%>
       <div class='show-image'>
         <%= image_tag @illust.image,width:'60%',height:'80%'%>
       </div>
