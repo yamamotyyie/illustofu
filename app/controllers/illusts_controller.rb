@@ -1,5 +1,6 @@
 class IllustsController < ApplicationController
   before_action :authenticate_user!,only: [:new,:destroy]
+  before_action :set_illust,only: [:show,:destroy]
 
   def index
     @illusts=Illust.all
@@ -19,20 +20,22 @@ class IllustsController < ApplicationController
   end
 
   def show
-    @illust = Illust.find(params[:id])
   end
 
   def destroy
-    @illust=Illust.find(params[:id])
     unless current_user.id == @illust.user_id
       redirect_to action: :show
     end
-    illust.destroy
+    @illust.destroy
     redirect_to root_path
   end
 
   private
   def illust_params
     params.require(:illust).permit(:title,:text,:image).merge(user_id: current_user.id)
+  end
+
+  def set_illust
+    @illust=Illust.find(params[:id])
   end
 end
