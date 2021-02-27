@@ -15,5 +15,14 @@
       <div class='illust-show-text'>
         <%= @illust.text%>
       </div>
+      <div class='illust-comments'>
+        <% if user_signed_in?%>
+          <%= form_with model: [@illust,@comment],local: true do |f|%>
+            <div class='comment-field'>
+              <%= f.text_field%>
+            </div>
+          <% end%>
+        <%end%>
+      </div>
   </div>
 </div>
