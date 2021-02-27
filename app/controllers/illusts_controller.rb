@@ -21,6 +21,7 @@ class IllustsController < ApplicationController
 
   def show
     @comment= Comment.new
+    @comments = @illust.comments.includes(:user)
   end
 
   def edit

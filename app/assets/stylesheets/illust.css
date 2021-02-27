@@ -305,10 +305,12 @@ img {
 }
 .comment-field{
   text-align: center;
-  background-color:#6c4008;
+  
 }
 .comment-title{
-  margin: 0%;
+}
+.comment{
+  
 }
 /* エラーメッセージ */
 .error-alert {
