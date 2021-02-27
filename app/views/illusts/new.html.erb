@@ -1,34 +1,6 @@
 <div class='illust-content'>
-  <%= form_with model:@illust,class:'illust-post-main',local: true do|f|%>
-
-  <%= render 'devise/shared/error_messages', model: f.object %>
-
-    <h2 class='illust-post-title'>イラストの情報を入力</h2>
-    <div class='img-upload'>
-      <div class='form-text'>
-        イラスト画像
-        <span class='indispensable'>必須</span>
-      </div>
-      <div class='click-upload'>
-        <p>クリックでイラストをアップロード</p>
-        <%=f.file_field :image%>
-      </div>
-    </div>
-    <div class='new-illust'>
-      <div class='form-text'>
-        タイトル
-        <span class='indispensable'>必須</span>
-      </div>
-      <%= f.text_area :title,class:'illust-text',placeholder:"タイトルを入力"%>
-      <div class='form-text'>
-        イラスト説明
-        <span class='indispensable'>必須</span>
-      </div>
-      <%= f.text_area :text,class:'illust-text',placeholder:"説明文を入力(あああああああああああああああああああ)"%>
-    </div>
-    <div class='illust-btn-contents'>
-    <%= f.submit "投稿する",class:'post-btn'%>
-    <%= link_to "戻る",root_path,class:'back-btn'%>
-    </div>
-  <% end%>
+  <div class='illust-title-wrapper'>
+    <h2 class='new-illsut-text'>新規イラスト投稿</h2>
+  </div>
+  <%= render partial:"form",local:{illust:@illust}%>
 </div>

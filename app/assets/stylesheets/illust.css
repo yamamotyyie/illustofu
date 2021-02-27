@@ -168,6 +168,7 @@ img {
   height: 100%;
   background-color:#2c9c09;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -179,10 +180,16 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 1vh;
+  margin-bottom:  10px;
 }
-.illust-post-title{
-  font-size: 40px;
+.illust-title-wrapper{
+  background-color: #d9a62e;
+  margin: 10px 0;
+}
+.new-illsut-text{
+  padding: 5px;
 }
 .click-upload{
   margin-top: 10px;
@@ -204,17 +211,18 @@ img {
   height: 20vh;
   border: 1px solid black;
   padding: 16px 16px 16px;
-  margin-top: 10px;
+  margin-top: 30px;
   font-size:16px;
   resize: none;
   border: none;
   box-shadow: 0px 0px 3px 3px rgb(230, 230, 230) inset;
 }
 .illust-btn-contents{
-  margin-top: 60px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
-  height: 300px;
+  justify-content: center;
+  height: 200px;
   text-align: center;
 }
 .post-btn{
@@ -224,6 +232,7 @@ img {
   box-shadow: 0px 0px 3px 3px #bbb inset;
   outline: none;
   border: none;
+  margin-bottom: 10px;
 }
 .back-btn{
   font-size: 20px;
@@ -266,7 +275,6 @@ img {
   padding: 20px;
 }
 .illust-manage{
-  margin-top: 10px;
   width: 300px;
   justify-content: space-around;
   display: flex;
@@ -274,6 +282,10 @@ img {
 }
 .illust-btn{
   margin-top:60px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  box-shadow: 0px 0px 4px 4px #bbb inset;
 }
 .illust-show-text{
   margin-bottom: 40px;
