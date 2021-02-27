@@ -19,7 +19,8 @@
         <% if user_signed_in?%>
           <%= form_with model: [@illust,@comment],local: true do |f|%>
             <div class='comment-field'>
-              <%= f.text_field%>
+              <h1>コメント<h1>
+              <%= f.text_field :massage%>
             </div>
           <% end%>
         <%end%>
