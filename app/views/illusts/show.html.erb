@@ -17,10 +17,13 @@
       </div>
       <div class='illust-comments'>
         <% if user_signed_in?%>
-          <%= form_with model: [@illust,@comment],local: true do |f|%>
+          <%= form_with model: [@illust,@comment],class:'comment-form',local: true do |f|%>
             <div class='comment-field'>
-              <h1>コメント<h1>
+              <h3 class='comment-title'>コメント<h3>
               <%= f.text_field :massage%>
+            </div>
+            <div class='actions'>
+              <%= f.submit "送信する"%>
             </div>
           <% end%>
         <%end%>

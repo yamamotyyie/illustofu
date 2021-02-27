@@ -297,6 +297,19 @@ img {
   color:black;
   margin:  20px 0;
 }
+.comment-form{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comment-field{
+  text-align: center;
+  background-color:#6c4008;
+}
+.comment-title{
+  margin: 0%;
+}
 /* エラーメッセージ */
 .error-alert {
   display: flex;
