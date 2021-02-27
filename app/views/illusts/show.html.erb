@@ -5,7 +5,7 @@
       </p>
       <% if user_signed_in? && current_user.id == @illust.user_id%>
         <div class='illust-manage'>
-          <%= link_to '編集する','#',class:'illust-btn'%> 
+          <%= link_to '編集する',edit_illust_path(@illust.id),class:'illust-btn'%> 
           <%= link_to '削除する',illust_path(@illust.id),class:'illust-btn',method: :delete%> 
         </div>
       <% end%>

@@ -1,6 +1,6 @@
 class IllustsController < ApplicationController
   before_action :authenticate_user!,only: [:new,:destroy]
-  before_action :set_illust,only: [:show,:destroy]
+  before_action :set_illust,only: [:show,:edit,:destroy]
 
   def index
     @illusts=Illust.all
@@ -20,6 +20,12 @@ class IllustsController < ApplicationController
   end
 
   def show
+  end
+
+  def edit
+  end
+
+  def update
   end
 
   def destroy
