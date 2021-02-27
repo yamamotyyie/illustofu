@@ -1,4 +1,6 @@
 class IllustsController < ApplicationController
+  before_action :authenticate_user!,only: [:new,:destroy]
+
   def index
     @illusts=Illust.all
   end
@@ -21,7 +23,10 @@ class IllustsController < ApplicationController
   end
 
   def destroy
-    illust=Illust.find(params[:id])
+    @illust=Illust.find(params[:id])
+    unless current_user.id == @illust.user_id
+      redirect_to action: :show
+    end
     illust.destroy
     redirect_to root_path
   end
