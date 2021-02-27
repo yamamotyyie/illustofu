@@ -292,7 +292,10 @@ img {
   padding: 5px;
 }
 .illust-show-text{
-  margin-bottom: 40px;
+  background-color: white;
+  box-shadow: 0px 0px 2px 2px #bbb inset;
+  color:black;
+  margin:  20px 0;
 }
 /* エラーメッセージ */
 .error-alert {
