@@ -1,6 +1,6 @@
 class IllustsController < ApplicationController
-  before_action :authenticate_user!,only: [:new,:destroy]
-  before_action :set_illust,only: [:show,:edit,:destroy]
+  before_action :authenticate_user!,only: [:new,:destroy,:edit]
+  before_action :set_illust,only: [:show,:edit,:update,:destroy]
 
   def index
     @illusts=Illust.all
@@ -23,9 +23,17 @@ class IllustsController < ApplicationController
   end
 
   def edit
+    unless current_user.id == @illust.user_id
+      redirect_to root_path
+    end
   end
 
   def update
+    if @illust.update(illust_params)
+      redirect_to illust_path
+    else
+      render :edit
+    end
   end
 
   def destroy
