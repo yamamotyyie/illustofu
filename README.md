@@ -43,7 +43,7 @@ __目指した課題解決__
 ## commentsテーブル
 |  Column  | Type  | Options |
 | ---------| ----- | ------- |
-| comment | text| null:false |
+| messeage | text| null:false |
 | user | reference | null: false foreign_key: true |
 | illust | reference | null: false foreign_key: true |
 
