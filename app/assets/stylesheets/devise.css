@@ -1,18 +1,26 @@
 .contents-row{
   background-color:#F0E68C;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .base{
   background-color: #006e54;
   width: 50vw;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
+}
+.base-login{
+  background-color: #006e54;
+  width: 50vw;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .registration-main,
 .login-main{
@@ -21,12 +29,13 @@
   height: 100%;
   box-shadow: 0px 0px 9px 9px #bbb inset;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 10px;
 }
 .form-header-text{
   font-size: 40px;
+  margin-top: 10px;
 }
 .form-group{
   width: 40vw;

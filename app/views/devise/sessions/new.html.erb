@@ -1,11 +1,13 @@
 <div class='contents-row'>
-  <div class='base'>
+  <div class='base-login'>
     <%= form_with model: @user,url:user_session_path,class:'login-main',local: true do |f|%>
+    
       <div class='form-header'>
         <h1 class='form-header-text'>
           会員情報入力
         </h1>
       </div>
+      <%= render 'devise/shared/error_messages', model: f.object %>
       <div class='form-group'>
         <div class='form-text-wrap'>
           <label class='form-text'>メールアドレス</label>

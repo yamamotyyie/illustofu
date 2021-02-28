@@ -124,7 +124,7 @@ img {
 }
 .card{
   background-color: #006e54;
-  width: 250px;
+  width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -298,20 +298,43 @@ img {
   color:black;
   margin:  20px 0;
 }
+.illust-comments{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  padding: 20px;
+}
 .comment-form{
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #d9a62e;
 }
 .comment-field{
   text-align: center;
 }
-.comment-title{
+.comments_lists{
+  background-color: #d9a62e;
+  padding: 10px;
+  width: 30vw;
+}
+.comment_list{
+  color: black;
+  box-shadow: 0px 0px 2px 2px #bbb inset;
+  background-color: white;
+  margin: 5px;
+  height: 30px;
+  padding: 5px;
+}
+.comment-user-name{
+  color: #006e54;
 }
 .comment{
   width: 300px;
   height: 100px;
+  box-shadow: 0px 0px 5px 5px #bbb inset;
 }
 /* エラーメッセージ */
 .error-alert {
