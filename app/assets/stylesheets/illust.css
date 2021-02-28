@@ -252,6 +252,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .illust-show-main{
   height: 100%;
@@ -305,12 +306,12 @@ img {
 }
 .comment-field{
   text-align: center;
-  
 }
 .comment-title{
 }
 .comment{
-  
+  width: 300px;
+  height: 100px;
 }
 /* エラーメッセージ */
 .error-alert {

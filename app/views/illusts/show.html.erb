@@ -15,7 +15,8 @@
       <div class='illust-show-text'>
         <%= @illust.text%>
       </div>
-      <div class='illust-comments'>
+  </div>
+    <div class='illust-comments'>
         <% if user_signed_in?%>
           <%= form_with model: [@illust,@comment],class:'comment-form',local: true do |f|%>
             <div class='comment-field'>
@@ -36,5 +37,4 @@
           </li>
         <% end%>
       </ul>
-  </div>
 </div>
