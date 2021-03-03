@@ -12,6 +12,9 @@
 ### ユーザー認証
 ID...admin  
 pass...2222
+### テストユーザー
+email...aaa@example  
+pass...test123
 
 # 制作背景
 
