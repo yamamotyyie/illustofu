@@ -9,6 +9,9 @@
 # 本番環境
 ### URL  
 [いらすとーふ](https://illustofu.herokuapp.com/ "トップページ")
+### ユーザー認証
+ID...admin
+pass...2222
 
 # 制作背景
 
