@@ -10,7 +10,7 @@
 ### URL  
 [いらすとーふ](https://illustofu.herokuapp.com/ "トップページ")
 ### ユーザー認証
-ID...admin
+ID...admin  
 pass...2222
 
 # 制作背景
