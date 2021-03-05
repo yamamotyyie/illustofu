@@ -1,3 +1,3 @@
 document.addEventListener('DOMContentLoaded',function(){
-  const ImageList = document.getElementById('illust-image')
+  const ImageList = document.getElementById('image-list')
 });
