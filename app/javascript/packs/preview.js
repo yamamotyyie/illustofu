@@ -5,5 +5,6 @@ document.addEventListener('DOMContentLoaded',function(){
    const blob= window.URL.createObjectURL(file);
 
    const imageElement = document.createElement('div');
+   const blobImage = document.createElement('img');
   });
 });
