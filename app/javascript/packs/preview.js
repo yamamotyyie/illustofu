@@ -1,3 +1,4 @@
+if (document.URL.match( /new/) || document.URL.match( /edit/)) {
 document.addEventListener('DOMContentLoaded',function(){
   const ImageList = document.getElementById('image-list');
   document.getElementById('illust_image').addEventListener('change',function(e){
@@ -12,3 +13,4 @@ document.addEventListener('DOMContentLoaded',function(){
    ImageList.appendChild(imageElement)
   });
 });
+}
