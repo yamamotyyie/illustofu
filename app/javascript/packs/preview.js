@@ -9,5 +9,6 @@ document.addEventListener('DOMContentLoaded',function(){
    blobImage.setAttribute('src',blob);
 
    imageElement.appendChild(blobImage);
+   ImageList.appendChild(imageElement)
   });
 });
