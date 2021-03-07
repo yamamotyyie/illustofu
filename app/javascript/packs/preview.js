@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded',function(){
 
   const createImageHTML = (blob) => {
     const imageElement = document.createElement('div');
-    imageElement.className='illust-image'
 
     const blobImage = document.createElement('img');
     blobImage.setAttribute('src',blob);
