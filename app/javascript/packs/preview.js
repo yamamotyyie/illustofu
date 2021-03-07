@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded',function(){
   }
 
   document.getElementById('illust_image').addEventListener('change',function(e){
-   const imageContent = document.querySelector('img');
+   const imageContent = document.querySelector('illust-image');
    if (imageContent){
      imageContent.remove();
    }
