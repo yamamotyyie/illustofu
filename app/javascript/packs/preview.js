@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded',function(){
     blobImage.setAttribute('src',blob);
 
     imageElement.appendChild(blobImage);
+    ImageList.appendChild(imageElement)
   }
 
   document.getElementById('illust_image').addEventListener('change',function(e){
@@ -19,7 +20,6 @@ document.addEventListener('DOMContentLoaded',function(){
    const file=e.target.files[0];
    const blob= window.URL.createObjectURL(file);
 
-   ImageList.appendChild(imageElement)
   });
 });
 }
