@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded',function(){
     const imageElement = document.createElement('div');
 
     const blobImage = document.createElement('img');
+    blobImage.setAttribute('src',blob);
   }
 
   document.getElementById('illust_image').addEventListener('change',function(e){
@@ -16,7 +17,6 @@ document.addEventListener('DOMContentLoaded',function(){
    const file=e.target.files[0];
    const blob= window.URL.createObjectURL(file);
 
-   blobImage.setAttribute('src',blob);
 
    imageElement.appendChild(blobImage);
    ImageList.appendChild(imageElement)
