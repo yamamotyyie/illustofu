@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded',function(){
    const file=e.target.files[0];
    const blob= window.URL.createObjectURL(file);
 
-   createElement(blob);
+   createImageHTML(blob);
   });
 });
 }
