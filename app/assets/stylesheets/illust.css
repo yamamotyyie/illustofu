@@ -207,7 +207,7 @@ img {
 }
 .new-illust{
   width: 50vw;
-  padding-top: 2vh;
+  padding-top: 10vh;
   display: flex;
   flex-direction: column;
 }
