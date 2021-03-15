@@ -157,6 +157,7 @@ img {
 }
 .illust-user{
   color: rgb(255, 215, 83);
+  text-decoration: none;
 }
 .illust-img{
   width: 90%;
