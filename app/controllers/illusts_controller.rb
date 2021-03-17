@@ -3,7 +3,7 @@ class IllustsController < ApplicationController
   before_action :set_illust,only: [:show,:edit,:update,:destroy]
 
   def index
-    @illusts=Illust.all
+    @illusts=Illust.includes(:user).order("created_at DESC")
   end
 
   def new
