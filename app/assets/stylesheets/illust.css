@@ -65,7 +65,7 @@ img {
   align-items: center;
 }
 
-.menu ,
+.menu,
 .sign-up, 
 .login,
 .logout{
@@ -74,6 +74,12 @@ img {
   text-decoration: none;
   background-color: white;
   box-shadow: 0px 0px 4px 4px #bbb inset;
+}
+.menu-lists{
+  background-color: white;
+  position: absolute;
+  top: 71px;
+  right: 90px;
 }
 
 /* トップページ */
