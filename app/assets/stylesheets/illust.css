@@ -79,7 +79,13 @@ img {
   background-color: white;
   position: absolute;
   top: 71px;
-  right: 90px;
+  right: 46px;
+  box-shadow: 0px 0px 4px 4px #bbb inset;
+  width: 160px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* トップページ */
