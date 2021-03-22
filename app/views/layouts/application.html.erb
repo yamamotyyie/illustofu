@@ -18,9 +18,9 @@
         <ul class='nav_right'>
         <% if user_signed_in?%>
           <li> <%= link_to 'ログアウト',destroy_user_session_path,method: :delete, class:'logout'%> </li>
-          <li> <%= link_to 'めにゅー',new_illust_path,class:'menu'%> </li>
+          <li class="menu">めにゅー</li>
           <ul class="menu-lists">
-            <li>投稿する</li>
+            <li><%= link_to '投稿する',new_illust_path,class:'post'%> </li>
             <li>マイページ</li>
           </ul>
         <% else%>

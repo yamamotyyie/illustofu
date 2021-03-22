@@ -86,8 +86,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
-
+.post{
+  text-decoration: none;
+}
 /* トップページ */
 .main ,
 .contents{
