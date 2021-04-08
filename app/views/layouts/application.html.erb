@@ -19,7 +19,7 @@
         <% if user_signed_in?%>
           <li> <%= link_to 'ログアウト',destroy_user_session_path,method: :delete, class:'logout'%> </li>
           <li class="menu" id='lists'>めにゅー</li>
-          <ul class="menu-lists">
+          <ul class="menu-lists" id='pull-down'>
             <li><%= link_to '投稿する',new_illust_path,class:'post'%> </li>
             <li>マイページ</li>
           </ul>
