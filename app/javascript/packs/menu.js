@@ -3,10 +3,10 @@ window.addEventListener('load',function(){
   const pullDownParents = document.getElementById("pull-down")
   
   pullDownButton.addEventListener('mouseover',function(){
-    pullDownButton.setAttribute("style","background-color:gray;")
+    this.setAttribute("style","background-color:gray;")
   })
   pullDownButton.addEventListener('mouseout',function(){
-    pullDownButton.removeAttribute("style","background-color:gray;")
+    this.removeAttribute("style","background-color:gray;")
   })
   pullDownButton.addEventListener('click',function(){
     pullDownParents.setAttribute("style","display:block;")
