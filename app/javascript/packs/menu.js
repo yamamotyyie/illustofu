@@ -9,6 +9,10 @@ window.addEventListener('load',function(){
     this.removeAttribute("style","background-color:gray;")
   })
   pullDownButton.addEventListener('click',function(){
-    pullDownParents.setAttribute("style","display:block;")
+    if (pullDownParents.setAttribute("style")=="display:block;"){
+      pullDownParents.removeAttribute("style","display:block;")
+    } else{
+      pullDownParents.setAttribute("style","display:block;")
+    }
   })
 })
