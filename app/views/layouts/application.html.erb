@@ -21,7 +21,7 @@
           <li class="menu" id='lists'>めにゅー</li>
           <ul class="menu-lists" id='pull-down'>
             <li><%= link_to '投稿する',new_illust_path,class:'post'%> </li>
-            <li>マイページ</li>
+            <li><%= link_to 'マイページ',"#"%></li>
           </ul>
         <% else%>
           <li> <%= link_to '新規登録',new_user_registration_path,class:'sign-up'%> </li>
