@@ -1,3 +1,4 @@
+<%# 投稿フォーム %>
 <%= form_with model:@illust,class:'illust-post-main',local: true do|f|%>
 
   <%= render 'devise/shared/error_messages', model: f.object %>
@@ -30,3 +31,4 @@
     <%= link_to "戻る",root_path,class:'back-btn'%>
     </div>
   <% end%>
+  <%# /投稿フォーム %>

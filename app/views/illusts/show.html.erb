@@ -1,3 +1,4 @@
+<%# イラスト詳細 %>
 <div class='illust-show-content'>
   <div class='illust-show-main'>
       <p class=illust-show-text>
@@ -16,6 +17,8 @@
         <%= @illust.text%>
       </div>
   </div>
+  <%# / 詳細 %>
+    <%# コメント %>
     <div class='illust-comments'>
         <% if user_signed_in?%>
           <%= form_with model: [@illust,@comment],class:'comment-form',local: true do |f|%>
@@ -36,6 +39,6 @@
           </li>
         <% end%>
       </ul>
-      </div>
-      
+    </div>
+    <%# / コメント %>
 </div>
