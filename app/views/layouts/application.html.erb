@@ -10,6 +10,8 @@
   </head>
 
   <body>
+
+  <%# ヘッダー %>
     <header class='header'>
       <div class='nav'>
         <div class='nav_left'>
@@ -21,7 +23,7 @@
           <li class="menu" id='lists'>めにゅー</li>
           <ul class="menu-lists" id='pull-down'>
             <li><%= link_to '投稿する',new_illust_path,class:'post'%> </li>
-            <li><%= link_to 'マイページ',"#"%></li>
+            <li><%= link_to 'マイページ',"#",class:'post'%></li>
           </ul>
         <% else%>
           <li> <%= link_to '新規登録',new_user_registration_path,class:'sign-up'%> </li>
@@ -30,6 +32,8 @@
         </div>
       </div>
     </header>
+  <%# /ヘッダー %>
+
     <%= yield %>
     <footer class='footer'>
       
