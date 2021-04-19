@@ -317,6 +317,8 @@ img {
   color:black;
   margin:  20px 0;
 }
+
+/* コメント */
 .illust-comments{
   display: flex;
   align-items: center;
