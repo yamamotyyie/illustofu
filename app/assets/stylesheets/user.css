@@ -2,6 +2,7 @@
 .mypage_contents{
   height: 100vh;
   background-color:#F0E68C;
+  display: flex;
 }
 .username-wrapp{
   width: 30%;
