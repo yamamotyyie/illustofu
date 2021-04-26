@@ -3,6 +3,11 @@
   height: 100vh;
   background-color:#F0E68C;
 }
+.username-wrapp{
+  width: 30%;
+  height: 30%;
+  background-color: red;
+}
 .mypage{
   width: 70%;
   height: 70%;
