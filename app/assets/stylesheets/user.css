@@ -3,9 +3,11 @@
   height: 100vh;
   background-color:#F0E68C;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .username-wrapp{
-  width: 30%;
+  width: 20%;
   height: 30%;
   background-color: red;
 }
