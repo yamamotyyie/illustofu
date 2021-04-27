@@ -13,6 +13,10 @@
   text-align: center;
   line-height: 200px;
 }
+.mypage_username{
+  color: black;
+  font-size: 30px;
+}
 .mypage{
   width: 70%;
   height: 70%;
