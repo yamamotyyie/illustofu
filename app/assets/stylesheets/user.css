@@ -12,10 +12,15 @@
   background-color: #d9a62e;
   text-align: center;
   line-height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mypage_username{
   color: black;
   font-size: 30px;
+  background-color: white;
+  width: 200px;
 }
 .mypage{
   width: 70%;
