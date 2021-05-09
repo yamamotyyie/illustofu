@@ -7,7 +7,7 @@
   <div class='mypage_wrapp'>
     <div class='mypage'>
       <% @illusts.each do |illust| %>
-        <%= image_tag(illust.image)%>
+        <%= image_tag(illust.image,class: :illust_img)%>
       <% end %>
     </div>
   </div>
