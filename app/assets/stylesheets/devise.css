@@ -81,6 +81,7 @@
   box-shadow: 0px 0px 3px 3px #bbb inset;
   outline: none;
   border: none;
+  margin-bottom: 40px;
 }
 .login-main{
   height: 50vh;
