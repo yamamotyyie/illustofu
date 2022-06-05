@@ -54,6 +54,7 @@ class IllustsController < ApplicationController
   end
 
   private
+  # 誰がイラストを投稿したのか。userとillusuを結びつけ　
   def illust_params
     params.require(:illust).permit(:title,:text,:image).merge(user_id: current_user.id)
   end
