@@ -2,14 +2,17 @@ class IllustsController < ApplicationController
   before_action :authenticate_user!,only: [:new,:destroy,:edit]
   before_action :set_illust,only: [:show,:edit,:update,:destroy]
 
+  # イラストの一覧表示
   def index
     @illusts=Illust.includes(:user).order("created_at DESC")
   end
 
+  # イラストの新規投稿
   def new
     @illust = Illust.new
   end
 
+  # イラストを投稿して保存
   def create
     @illust = Illust.new(illust_params)
     if @illust.save
@@ -19,11 +22,13 @@ class IllustsController < ApplicationController
     end
   end
 
+  # イラスト詳細画面
   def show
     @comment= Comment.new
     @comments = @illust.comments.includes(:user)
   end
 
+  # イラスト編集機能
   def edit
     unless current_user.id == @illust.user_id
       redirect_to root_path
@@ -37,7 +42,9 @@ class IllustsController < ApplicationController
       render :edit
     end
   end
+  # /イラスト編集機能
 
+  # イラスト削除機能
   def destroy
     unless current_user.id == @illust.user_id
       redirect_to action: :show
