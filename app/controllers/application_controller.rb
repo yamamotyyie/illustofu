@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up,keys: [:nickname])
   end
+  # deviseで登録する時のパラメーター
 
   def basic_auth
     authenticate_or_request_with_http_basic do |username,password|
