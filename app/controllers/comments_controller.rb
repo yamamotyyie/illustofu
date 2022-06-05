@@ -10,9 +10,10 @@ class CommentsController < ApplicationController
     end
   end
 
-
+  # commentのストロングパラメータ
   private
   def comment_params
     params.require(:comment).permit(:messeage).merge(user_id:current_user.id,illust_id: params[:illust_id])
   end
+  # /commentのストロングパラメータ
 end
