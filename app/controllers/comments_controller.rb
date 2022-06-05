@@ -3,10 +3,12 @@ class CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
     if @comment.save
       redirect_to illust_path(@comment.illust)
+      # コメントの保存が成功したら詳細画面に遷移
     else
       @illust = @comment.illust
       @comments = @illust.comments
       render "illusts/show"
+      # 失敗したら入力値を入れ直してページに止まる
     end
   end
 
